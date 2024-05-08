@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Flip Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="background-music" src="./flip.mp3" autoplay loop></audio>
+
+    <div class="game-container">
+        <!-- Game Board (4x4 grid) -->
+        <div id="game-board">
+            <div class="row">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            <div class="row">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            <div class="row">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            <div class="row">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </div>
+
+        <!-- Timer, Flip Count, and Flip Match Count -->
+        <div class="info-row">
+            <div class="info">Time: <span id="timer">30</span> seconds</div>
+            <div class="info">Flips: <span id="flip-count">0</span></div>
+            <div class="info">Matches: <span id="flip-match-count">0</span></div>
+        </div>
+
+        <!-- Refresh Button -->
+        <div class="refresh-container">
+            <button id="refresh-game">Refresh Game</button>
+        </div>
+
+        <!-- Victory Message -->
+        <div class="win-message hidden" id="win-message">
+            Congratulations! You win!
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
